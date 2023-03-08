@@ -1,0 +1,270 @@
+header.header {
+  width: 100%;
+  height: 100px;
+  background-color: var(--m-color);
+  position: fixed;
+  z-index: 9999;
+}
+header.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+}
+header.header .container::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #f0f0f0;
+  left: 0;
+  bottom: -5px;
+}
+header.header .container .logo {
+  width: 70px;
+}
+header.header .container .logo img {
+  max-width: 100%;
+}
+header.header .container i.fa-bars {
+  display: none;
+}
+header.header .container nav.links-h {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+header.header .container nav.links-h span.close {
+  display: none;
+}
+header.header .container nav.links-h li {
+  margin-left: 25px;
+}
+header.header .container nav.links-h li a {
+  padding: 10px;
+}
+/* End Header Style */
+
+.landing {
+  padding-top: var(--p-main);
+  padding-bottom: var(--p-main);
+  width: 100%;
+  background-color: var(--m-color);
+  min-height: 100vh;
+}
+.landing .container {
+  text-align: center;
+}
+.landing .container .txt {
+  min-width: 70%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.landing .container .txt h1 {
+  margin: 50px 10px;
+  text-align: center;
+  font-size: 40px;
+}
+.landing .container .txt p {
+  margin-bottom: 35px;
+  line-height: var(--m-liHei);
+}
+.landing .container .txt a {
+  background-color: #f0f0f0;
+  margin: 20px auto;
+  width: 250px;
+  padding: 15px;
+  text-transform: capitalize;
+  color: var(--m-color);
+  box-shadow: 0 0 25px 0px #f0f0f0;
+}
+.landing .container .txt a:hover {
+  background-color: var(--m-color);
+  color: #f0f0f0;
+  font-weight: bold;
+  border: 1px solid var(--m-color);
+  box-shadow: none;
+}
+.landing .container i.fas.fa-angles-down {
+  margin-top: 60px;
+  position: absolute;
+  animation:  bottom 3s infinite ease-in-out;
+  -webkit-animation:  bottom 3s infinite ease-in-out;
+  -moz-animation:  bottom 3s infinite ease-in-out;
+  -ms-animation:  bottom 3s infinite ease-in-out;
+  -o-animation:  bottom 3s infinite ease-in-out;
+}
+.landing .container i.fas.fa-angles-down:hover {
+  color: white;
+}
+@keyframes bottom {
+  0%, 50%, 100% {
+    margin-top: 60px;
+  }
+
+  25%, 75% {
+    margin-top: 30px;
+  }
+}
+/* End landing Style */
+
+
+/* End About Us Style */
+
+.products {
+  padding-top: var(--p-main);
+  padding-bottom: var(--p-main);
+}
+.products .container {
+  display: grid;
+  -webkit-grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  -moz-grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  -ms-grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  -o-grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  overflow: hidden;
+}
+.products .container .product {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 530px;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+.products .container .product img {
+  width: 100%;
+  max-width: 100%;
+  min-height: 303px;
+}
+.products .container .product .txt {
+  text-align: center;
+}
+.products .container .product .txt h4 {
+  font-size: 1.6em;
+  margin: 35px auto;
+}
+.products .container .product .txt p {
+  line-height: var(--m-liHei);
+}
+/* End Products Style */
+
+.contact {
+  padding-bottom: var(--p-main);
+  padding-top: var(--p-main);
+}
+.contact .container .txt {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.contact .container .txt .social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact .container .txt div {
+  text-align: center;
+}
+.contact .container .txt div i {
+  margin-bottom: 30px;
+}
+.contact .container .txt div i:hover {
+  color: var(--m-color);
+}
+.contact .container .txt div.groups {
+line-height: var(--m-liHei);
+}
+.contact .container .txt form.co {
+  text-align: right;
+}
+.contact .container .txt form.co a {
+  padding: 15px;
+  color: var(--m-color);
+  font-weight: bold;
+  border: var(--m-color) 1px solid;
+  position: relative;
+}
+.contact .container .txt form.co a:hover::before {
+  width: 80px;
+  height: 80px;
+  z-index: -1;
+}
+.contact .container .txt form.co a:hover::after {
+  width: 80px;
+  height: 80px;
+  z-index: -1;
+}
+.contact .container .txt form.co a:hover {
+  color: white;
+  overflow: hidden;
+}
+.contact .container .txt form.co a::before{
+  content: '';
+  transition: .7s;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--m-color);
+  top: 50%;
+  transform: translate(0, -50%);
+  left: -25px;
+  position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -webkit-transition: .7s;
+  -moz-transition: .7s;
+  -ms-transition: .7s;
+  -o-transition: .7s;
+}
+.contact .container .txt form.co a::after{
+  content: '';
+  transition: .7s;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  background-color: var(--m-color);
+  right: -25px;
+  transform: translate(0, -50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -webkit-transition: .7s;
+  -moz-transition: .7s;
+  -ms-transition: .7s;
+  -o-transition: .7s;
+}
+/* End Contact Style */
+
+footer.footer {
+  padding-top: var(--p-main);
+  padding-bottom: var(--p-main);
+  text-align: center;
+  background-color: green;
+  line-height: var(--m-liHei);
+}
+footer.footer .container p {
+  color: white;
+}
+footer.footer .container .txt a {
+  color: yellow;
+}
+/* End Footer Style */

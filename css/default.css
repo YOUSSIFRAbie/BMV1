@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition:.7s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-transition:.7s;
+  -moz-transition:.7s;
+  -ms-transition:.7s;
+  -o-transition:.7s;
+}
+:root {
+  --m-main: 140px;
+  --p-main: 100px;
+  --m-color: #007cff;
+  --m-liHei: 1.8;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--m-color);
+}
+::-moz-scrollbar {
+  width: 15px;
+}
+::-moz-scrollbar-track {
+  background-color: #f0f0f0;
+}
+::-moz-scrollbar-thumb {
+  background-color: var(--m-color);
+}
+::-ms-scrollbar {
+  width: 15px;
+}
+::-ms-scrollbar-track {
+  background-color: #f0f0f0;
+}
+::-ms-scrollbar-thumb {
+  background-color: var(--m-color);
+}
+::-o-scrollbar {
+  width: 15px;
+}
+::-o-scrollbar-track {
+  background-color: #f0f0f0;
+}
+::-o-scrollbar-thumb {
+  background-color: var(--m-color);
+}
+input:focus, textarea:focus {
+  outline: none;
+}
+input:hover, textarea:hover {
+  outline: none;
+} 
+input, textarea {
+  outline: none;
+  border: 1px solid var(--m-color);
+}
+input::placeholder, textarea::placeholder {
+  color: var(--m-color);
+}
+html, * {
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  -o-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Roboto Slab', serif, 'Open Sans', sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+p {
+  color: rgba(119, 119, 119, 50%);
+  font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+.container {
+  margin-left: var(--m-main);
+  margin-right: var(--m-main);
+  max-width: 100%;
+  position: relative;
+}

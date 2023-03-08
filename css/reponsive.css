@@ -1,0 +1,107 @@
+@media (max-width: 767px) {
+
+  .container {
+    margin-left: calc(var(--m-main) / 3);
+    margin-right: calc(var(--m-main) / 3);
+  }
+  /* End Default */
+
+  .landing .container .txt h1 {
+    font-size: 1.5em;
+  }
+  /* End Landing */
+
+  .products .container .product {
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--m-color);
+  }
+  /* End Products */
+
+  footer.footer .container .languages i {
+    display: block;
+  }
+}
+/* Small Media Small Screen */
+
+@media (max-width: 991px) {
+  header.header .container nav.links-h {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 50, 50, 90%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .7s;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+  }
+  header.header .container nav.links-h.open {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  header.header .container nav.links-h span.close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: indianred;
+    width: 40px;
+    height: 40px;
+    border: 2px solid indianred;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  header.header .container nav.links-h li {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+  header.header .container nav.links-h li a {
+    color: white;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 80px;
+  }
+  header.header .container nav.links-h li a:hover {
+    background-color: rgba(0, 0, 0, 50%);
+  }
+  header.header .container i.fa-bars {
+    cursor: pointer;
+    display: flex;
+  }
+  /* End Header */
+
+  .contact .container .txt div i {
+    margin-top: 35px;
+  }
+  .contact .container .txt {
+    row-gap: 25px;
+  }
+  .contact .container .txt form.co {
+    margin-top: 15px;
+    padding: 20px;
+    padding-left: 0;
+    border-top: 1px solid var(--m-color);
+  }
+
+
+}
+/* End Media Medeum Screen */
